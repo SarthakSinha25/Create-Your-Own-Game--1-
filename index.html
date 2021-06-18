@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        </script>
+        <script src="lib/p5.js"></script>
+        <script src="lib/p5.dom.min.js"></script>
+        <script src="lib/p5.sound.min.js"></script>
+        <script src="lib/p5.play.js"></script>
+        <script src="lib/matter.js"></script>
+        <script src="js/Game.js"></script>
+        <script src="js/Player.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="utf-8">
+        <script src="https://unpkg.com/matter-js@0.14.2/build/matter.min.js"></script>
+    </head>
+
+
+    <body>
+      <script src="sketch.js"></script>
+      <script>
+        function getFullscreenElement(){
+          return document.fullscreenElement
+              || document.webkitFullscreenElement
+              || document.mozFullscreenElement
+              || document.mskitFullscreenElement
+        }
+
+            document.addEventListener("dblclick",  () => {
+              document.documentElement.requestFullscreen().catch(() => {
+                console.log(e);
+              })
+            })
+
+        document.addEventListener("fullscreenchange", () => {
+          console.log("ss");
+        })
+      </script>
+
+    </body>
+</html>
